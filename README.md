@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
-![]()
+![](./images/my-solution-desktop.png)
+![](./images/image-header-mobile.jpg)
 
 ### Links
 
@@ -43,11 +43,11 @@ Users should be able to:
 
 ### What I learned
 
-
+Nothing new
 
 ### Continued development
 
-
+  After little break I need to again learn about max-width and max-height
 
 ## Author
 
