@@ -15,6 +15,7 @@ body {
 	width: 100%;
 	font-family: 'Inter', sans-serif;
 	font-size: 15px;
+	color: $st-white-75;
 }
 
 main {
@@ -23,12 +24,111 @@ main {
 	align-items: center;
 	height: 100%;
 	width: 100%;
-    .card{
-        .desktop{
-            display: none;
-        }
-    }
+	background-color: $very-dark-blue;
+	.card {
+		max-width: 100%;
+		max-height: 100%;
+		margin: 0 20px;
+		border-radius: 15px;
+		background-color: $dark-desaturated-blue;
+		overflow: hidden;
+		.image {
+			position: relative;
+			width: 100%;
+			height: 250px;
+			background-image: url('../images/image-header-mobile.jpg');
+			background-size: cover;
+			background-position: center;
+			.image-shadow {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $soft-violet-shadow;
+			}
+		}
+		.text {
+			position: relative;
+			.title {
+				width: 100%;
+				padding: 30px 20px 10px 20px;
+				text-align: center;
+				font-size: 1.7em;
+				color: $white;
+				span {
+					color: $soft-violet;
+				}
+			}
+			.description {
+				width: 100%;
+				padding: 10px 20px 20px 20px;
+				text-align: center;
+				font-size: 1.1em;
+				line-height: 1.5;
+			}
+			.statistics {
+				margin-bottom: 30px;
+				.stat {
+					padding: 10px 0;
+					text-align: center;
+					.amount {
+						font-size: 1.7em;
+						font-weight: bold;
+						color: $white;
+					}
+					h2 {
+						margin-top: 5px;
+						text-transform: uppercase;
+						font-family: 'Lexend Deca', sans-serif;
+						font-weight: 400;
+						font-size: 0.7em;
+						letter-spacing: 1px;
+						color: $st-white-60;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1440px) {
+	main {
+		.card {
+			display: flex;
+			flex-direction: row-reverse;
+			max-width: 70%;
+			height: 450px;
+			.image {
+				width: 600px;
+				height: 100%;
+				background-image: url('../images/image-header-desktop.jpg');
+			}
+			.text {
+				width: 600px;
+				padding: 40px 50px 0 30px;
+				.title {
+					width: 500px;
+					font-size: 2.2em;
+					text-align: left;
+				}
+				.description {
+					max-width: 450px;
+					text-align: left;
+				}
+				.statistics {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 420px;
+					height: 200px;
+					padding: 0 20px;
+					.stat {
+						padding: 0;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
 }
